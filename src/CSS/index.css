@@ -7,3 +7,35 @@ margin-right: auto;}
 
 h1 {text-align: center;
 text-shadow: 4px 4px 8px white;}
+
+#fail {color:black;
+text-shadow: 2px 2px 4px red;
+font-size: 1.4em;
+font-weight: bold;
+text-align: center;}
+
+table{display: flex;
+justify-content: center;
+align-items: center;
+width:100%;
+border-collapse: collapse;
+margin:10px;}
+
+td{font-size: 1.2em; 
+    text-align: left;}
+
+th{font-size:1.6em; 
+    cursor: pointer;
+    background-color: azure; 
+    border:2px solid black; 
+    padding:8px;
+    text-align: left;}
+
+label {font-weight: bold;
+font-size: 1.5em;
+margin-left: 20%;}
+
+input{width:30%;
+    height:30px;
+    margin-left:20%;
+    border:2px solid #ccc;}

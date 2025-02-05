@@ -3,19 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Sidans innehåll består av en tabell med kurser."><!--keywords for search engines-->
+<meta name="description" content="Sidans innehåll består av en tabell med kurskoder, kurser och progression."><!--keywords for search engines-->
 <link rel="stylesheet" href="CSS/index.css"><!--Link to the page's css file-->
 <title>Kurs-tabell</title>
 <script src="js/main.js" type="module"></script><!--Linked javascript file-->
 </head>
+<body>
 <h1>Webbutveckling-Ramschema</h1>
 <div id="fail"></div>
+<label for="search">SÖK:</label>
+<br>
+<input type="text" id="search" placeholder="Sök kurskod/kursnamn">
+<table>
+    <thead>
+    <tr>
+        <th>Kurskoder:</th>
+        <th>Kursnamn:</th>
+        <th>Progression:</th>
+    </tr>
+    </thead>
 
-<h2>Kurskoder:</h2>
-<ul id="code"></ul>
+<tbody>
+    <div id="code"></div>
+    <div id="name"></div>
+    <div id="prog"></div>
+</tbody>
+</table>
+</body>
+</html>
 
-<h2>Kursnamn:</h2>
-<ul id="name"></ul>
+    
 
-<h2>Progression:</h2>
-<ul id="prog"></ul>
