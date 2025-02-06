@@ -1,10 +1,14 @@
 "use strict";
 
 let courses=[];
+
 window.onload=()=>{
     loadCourses();
 
+document.getElementById("code").addEventListener("click", sortCode);
+document.getElementById("name").addEventListener("click", sortName);
 }
+
 async function loadCourses() {
     try {
         const response=await fetch("https://webbutveckling.miun.se/files/ramschema_ht24.json");
@@ -20,19 +24,33 @@ async function loadCourses() {
     }
 }
 
-function displayCourses(data){
+function displayCourses(){
    
 const tbodyEl=document.getElementById("table");
-courses.forEach(course=>{
+tbodyEl.innerHTML="";
 
+courses.forEach(course=>{
     tbodyEl.innerHTML+=`<tr><td>${course.code}</td><td>${course.coursename}</td><td>${course.progression}</td></tr>`;
     
-    data.sort((a, b)=> a.code > b.code ? 1:-1);
-    data.sort((a, b)=> a.coursename > b.coursename ? 1:-1);
-    data.sort((a, b)=> a.progression > b.progression ? 1:-1);
-
 }
 )}
+
+function sortCode() {
+
+    const sortedCode=courses.code;
+
+        courses.sort((a, b)=> a.code > b.code ? 1:-1);
+    
+    displayCourses(sortedCode);
+}
+function sortName() {
+
+    const sortedName=courses.coursename;
+
+        courses.sort((a, b)=> a.coursename > b.coursename ? 1:-1);
+    
+    displayCourses(sortedName);
+}
 
 
 

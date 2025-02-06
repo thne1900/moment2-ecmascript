@@ -7,4 +7,6 @@
 - Testkörde kommandon och kontrollerade så att det blev synkade till Netlify för publicering.
 - Lade filer som inte ska versionshanteras i .gitignore.
 - Började initialt att koda i js-filen kring fetch-API, async/await och try/catch för att inhämta den data som ska användas. 
-- Efter det ska datan placeras i en tabell.
+- Efter det placerades datan i en tabell, i rader och kolumner. Detta gjordes genom att skapa element in i tabellen för datan. 
+- Därefter sorterades datan i respektive kolumn vid klick på varje kolumns tabellrubrik. 
+
