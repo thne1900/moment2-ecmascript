@@ -27,7 +27,7 @@ async function loadCourses() {
     }
 }
 
-function displayCourses(){
+function displayCourses(courses){
    
 const tbodyEl=document.getElementById("table");
 tbodyEl.innerHTML="";
