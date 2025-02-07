@@ -9,7 +9,6 @@ document.getElementById("code").addEventListener("click", sortCode);
 document.getElementById("name").addEventListener("click", sortName);
 document.getElementById("prog").addEventListener("click", sortProg);
 document.getElementById("filter").addEventListener("input", filterCourses);
-
 }
 
 async function loadCourses() {
@@ -32,33 +31,27 @@ function displayCourses(courses){
 const tbodyEl=document.getElementById("table");
 tbodyEl.innerHTML="";
 
-courses.forEach(course=>{
+courses.forEach((course)=>{
     tbodyEl.innerHTML+=`<tr><td>${course.code}</td><td>${course.coursename}</td><td>${course.progression}</td></tr>`;
     
+});
 }
-)}
-
 function sortCode() {
-
     const sortedCode=courses.code;
-
         courses.sort((a, b)=> a.code > b.code ? 1:-1);
     
-    displayCourses(sortedCode);
+    displayCourses(sortedCode); 
 }
+
 function sortName() {
-
     const sortedName=courses.coursename;
-
         courses.sort((a, b)=> a.coursename > b.coursename ? 1:-1);
     
     displayCourses(sortedName);
 }
 
 function sortProg() {
-
     const sortedProg=courses.progression;
-
         courses.sort((a, b)=> a.progression > b.progression ? 1:-1);
     
     displayCourses(sortedProg);
@@ -67,9 +60,8 @@ function sortProg() {
 function filterCourses() {
     const filterText=document.getElementById("filter").value;
 
-const coursesFiltered=courses.filter(course=>
+const coursesFiltered=courses.filter((course)=>
     course.coursename.toLowerCase().includes(filterText.toLowerCase())
 );
-
 displayCourses(coursesFiltered);
 }
