@@ -7,6 +7,9 @@ window.onload=()=>{
 
 document.getElementById("code").addEventListener("click", sortCode);
 document.getElementById("name").addEventListener("click", sortName);
+document.getElementById("prog").addEventListener("click", sortProg);
+document.getElementById("filter").addEventListener("input", filterCourses);
+
 }
 
 async function loadCourses() {
@@ -52,5 +55,21 @@ function sortName() {
     displayCourses(sortedName);
 }
 
+function sortProg() {
 
+    const sortedProg=courses.progression;
 
+        courses.sort((a, b)=> a.progression > b.progression ? 1:-1);
+    
+    displayCourses(sortedProg);
+}
+
+function filterCourses() {
+    const filterText=document.getElementById("filter").value;
+
+const coursesFiltered=courses.filter(course=>
+    course.coursename.toLowerCase().includes(filterText.toLowerCase())
+);
+
+displayCourses(coursesFiltered);
+}
