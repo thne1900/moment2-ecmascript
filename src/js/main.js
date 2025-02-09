@@ -37,24 +37,21 @@ courses.forEach((course)=>{
 });
 }
 function sortCode() {
-    const sortedCode=courses.code;
         courses.sort((a, b)=> a.code > b.code ? 1:-1);
-    
-    displayCourses(sortedCode); 
-}
 
+    displayCourses(courses); 
+}
+     
 function sortName() {
-    const sortedName=courses.coursename;
         courses.sort((a, b)=> a.coursename > b.coursename ? 1:-1);
-    
-    displayCourses(sortedName);
+
+    displayCourses(courses);
 }
 
 function sortProg() {
-    const sortedProg=courses.progression;
         courses.sort((a, b)=> a.progression > b.progression ? 1:-1);
     
-    displayCourses(sortedProg);
+    displayCourses(courses);
 }
 
 function filterCourses() {
@@ -65,3 +62,5 @@ const coursesFiltered=courses.filter((course)=>
 );
 displayCourses(coursesFiltered);
 }
+
+

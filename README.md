@@ -9,6 +9,6 @@
 - Började initialt att koda i js-filen kring fetch-API, async/await och try/catch för att inhämta den data som ska användas. 
 - Efter det placerades datan i en tabell, i rader och kolumner. Detta gjordes genom att skapa element in i tabellen för datan. 
 - Därefter sorterades datan i respektive kolumn vid klick på varje kolumns tabellrubrik.
-- En funktion gjordes så att vid inmatning i sökrutan ska datan filtreras. 
+- En funktion gjordes så att vid inmatning i sökrutan ska datan på kursnamn filtreras. 
  
 
