@@ -19,7 +19,7 @@ h1 {text-align: center;
     font-weight: bold;
     text-align: center;}
 
-/*The table has been given width, height, bounded lines and margins.*/
+/*The table has been given width, height, border collapse and margins.*/
 table{width:80%;
     height:auto;
     border-collapse: collapse;
