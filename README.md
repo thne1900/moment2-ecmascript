@@ -12,5 +12,9 @@
 - En funktion gjordes så att vid inmatning av text i sökrutan ska datan på kursnamn och kurskod filtreras. 
 - Testkörde så att funktionerna fungerade som de skulle. 
 - Körde kommando för att bygga ihop filerna så att webbsidan kan publiceras via Netlify. 
+
+
+### Av:thne1900
+### Kurs:Frontend-baserad webbutveckling
  
 
