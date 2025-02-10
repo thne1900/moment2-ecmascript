@@ -1,53 +1,69 @@
+/*The body has been given a background color, font-family, text color, height, width and margins.*/
 body{background-color: lightblue;
     font-family: Arial, Helvetica, sans-serif;
-color:black;
-max-width:1512px;
-height:auto;
-margin-left: auto;
-margin-right: auto;}
+    color:black;
+    max-width:1512px;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;}
 
+/*The main heading has been given centered text, shading and margin.*/
 h1 {text-align: center;
-text-shadow: 4px 4px 8px white;
-margin-bottom: 4%;}
+    text-shadow: 4px 4px 8px white;
+    margin-bottom: 4%;}
 
+/*The element in the event of an error message has been given text color and shading, size, bold style and centered text.*/
 #fail {color:black;
-text-shadow: 2px 2px 4px red;
-font-size: 1.4em;
-font-weight: bold;
-text-align: center;}
+    text-shadow: 2px 2px 4px red;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;}
 
-table{
-width:80%;
-border-collapse: collapse;
-margin:10px;
-margin-left:10%;
-margin-right: 10%;}
+/*The table has been given width, height, bounded lines and margins.*/
+table{width:80%;
+    height:auto;
+    border-collapse: collapse;
+    margin:10px;
+    margin-left:10%;
+    margin-right: 10%;}
 
-td{font-size: 1.2em; 
-    text-align: left;
-margin-left:8%;}
-
+/*The table's main headings have been given an underline, size, background color, padding, 
+text to the left and no border.*/
 th{text-decoration: underline;
     font-size:1.6em; 
-    cursor: pointer;
     background-color: azure; 
-    border:2px solid black; 
     padding:8px;
     text-align: left;
-    border:0;}
+    border: 0;}
 
+/*At the mouse pointer over the headings, there will be a "pointing finger" and blue color.*/
+th:hover {cursor: pointer; 
+    color:rgb(16, 16, 246)}
+
+/*The text content of the lines has been given a bottom border, size, text to the left and padding.*/ 
 #table td{border-bottom: 1px solid grey;
-font-size: 1.3em;
-text-align: left;
-padding:2%;}
+    font-size: 1.3em;
+    text-align: left;
+    padding:2%;}
 
+/*Label has been given size, bold style and margin.*/
 label {font-weight: bold;
-font-size: 1.5em;
-margin-left: 35%;}
+    font-size: 1.5em;
+    margin-left: 35%;}
 
+/*Input has been given size, margin, border and background color.*/
 input{width:30%;
     height:30px;
     margin-left:35%;
     border:2px solid #ccc;
     background-color: azure;
     margin-bottom: 2%;}
+
+/*Media rule for break point at 600px, the table becomes smaller in size and the text is reduced.*/
+@media (max-width:600px) {
+    table {width: 50%; height:auto;margin-left:2%; margin-right:2%;}
+    th{font-size: 1.4em;}
+    td{font-size: 1em;}
+    input{width:50%; margin-left:2%;}
+    label {font-size: 1.2em; margin-left:2%;}
+}
