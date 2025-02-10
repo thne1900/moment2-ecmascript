@@ -3,26 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Sidans innehåll består av en tabell med kurskoder, kurser och progression."><!--keywords for search engines-->
+<meta name="description" content="Sidans innehåll består av en tabell med kurskoder, kurser och progression.
+Där det går att söka kurskod/kursnamn och sortera i kolumnerna."><!--keywords for search engines-->
 <link rel="stylesheet" href="CSS/index.css"><!--Link to the page's css file-->
 <title>Kurs-tabell</title>
 <script src="js/main.js" type="module"></script><!--Linked javascript file-->
 </head>
 <body>
 <h1>Webbutveckling-Ramschema</h1>
-<div id="fail"></div>
-<label for="search">SÖK:</label>
+<div id="fail"></div><!--Div element for error message in the javascript file.-->
+<label for="search">SÖK:</label><!--Text input search box element.-->
 <br>
 <input type="text" id="filter" placeholder="Sök kurskod/kursnamn">
 <table>
     <thead>
     <tr>
-        <th id="code">Kurskoder:</th>
+        <th id="code">Kurskoder:</th><!--The main headings of the tables-->
         <th id="name">Kursnamn:</th>
         <th id="prog">Progression:</th>
     </tr>
     </thead>
-<tbody id="table">
+<tbody id="table"><!--Element where the printout of the data should be placed-->
 </tbody>
 </table>
 </body>
